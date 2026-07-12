@@ -1,0 +1,28 @@
+---
+source_url: https://www.youtube.com/watch?v=ezK6Uefj5qY
+source_kind: youtube-transcript
+ingested: 2026-07-12
+sha256: 3d4a1b9d86edbf0b304d3e777219eaaf525bd99f10bffc9d6237825df951bfd8
+model: faster-whisper / Systran-faster-whisper-tiny / int8
+language: zh
+duration_seconds: 2841
+quality: medium  # tiny 模型,中文字有錯讀但語意 OK
+---
+
+[原始檔案位置: ~/ob_repos/yt-podcast-pipeline/transcripts/ezK6Uefj5qY_fw.txt]
+
+注意:
+- 這份是 faster-whisper tiny 模型產出的逐字稿
+- 中文字詞常有誤讀:
+  "矽晶圓" → "細菁員"
+  "禾伸堂" → "河身旁"、"合生堂"、"合伸堂"
+  "國巨" → "國劇"
+  "華新科" → "華星科"
+  "台塑集團" → "台數集團"
+  "石英元件" → "死英元件"、"時英元件"
+  "MLCC" → "被動元件"
+  "國巨" → "國劇"
+  "兆華" → "照華"
+  "楊金龍" → "養金融"
+
+整理稿對應到此檔,信心中等(待 large-v3 重跑可達到 high)

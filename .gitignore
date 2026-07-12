@@ -1,0 +1,26 @@
+# Obsidian 個人 workspace 狀態不上 GitHub
+.obsidian/workspace*
+.obsidian/cache/
+
+# OS 檔案
+.DS_Store
+Thumbs.db
+
+# 編輯器暫存
+*.swp
+*.swo
+*~
+*.bak
+
+# Python (yt-podcast-pipeline)
+__pycache__/
+.venv/
+*.pyc
+
+# Whisper 模型 cache
+.faster-whisper/
+*.bin
+
+# 大型 raw 資產（依需求取捨）
+# raw/transcripts/*.mp3   # mp3 可重抓
+# raw/assets/             # 圖可重抓

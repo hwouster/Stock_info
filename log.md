@@ -1,0 +1,53 @@
+# Wiki Log
+
+> 所有 wiki 動作的時序紀錄，append-only。
+> 格式：`## [YYYY-MM-DD] action | subject`
+> 動作類：create, ingest, update, query, lint, archive, delete
+> 當這個檔超過 500 條時 rotate: rename 成 `log-YYYY.md`，重新開始。
+
+## [2026-07-12] create | Wiki 初始化
+- Domain: 台股個股、產業概念、財經節目
+- 建立 SCHEMA.md, index.md, log.md
+- 資料夾：raw/ (transcripts, articles, assets), entities/, concepts/, shows/, comparisons/, queries/
+- 路徑：`/mnt/e/OB/Stock/股票資訊/` (Obsidian vault)
+
+## [2026-07-12] ingest | 2026-07-09 理財達人秀電視版
+- 來源：YouTube video ID ezK6Uefj5qY
+- 原始逐字稿：`raw/transcripts/ezK6Uefj5qY-fw.txt` (faster-whisper tiny)
+- 建立頁面：
+  - `shows/2026-07-09-lsm-e36.md` (Show page)
+  - `entities/TWSE-2327國巨.md`
+  - `entities/TWSE-2492華新科.md`
+  - `entities/TWSE-8046禾伸堂.md`
+  - `entities/TWSE-2330台積電.md`
+  - `concepts/被動元件.md`
+  - `concepts/矽晶圓.md`
+  - `concepts/軍工.md`
+  - `concepts/科技ETF.md`
+  - `concepts/台塑集團.md`
+  - `entities/TWSE-6488環球晶.md`
+  - `concepts/石英元件.md`
+  - `concepts/記憶體.md`
+- 更新 `index.md` (共 12 頁)
+- 信心：`medium` — tiny 模型有錯讀，待 large-v3 重跑驗證
+
+## [2026-07-12] lint | wiki 完整性
+- 14 個 .md 頁面（5 個系統頁 + 9 個內容頁）
+- 15 個 broken wikilinks → 已修：(a) 建立 stub 頁面（環球晶、石英元件、記憶體），(b) 移除順帶一提的 wikilink 改純文字
+- 沒有真正 orphan 內容頁（每頁 inbound ≥ 4）
+- 持續追蹤：tiny whisper 文字需用 large-v3 重新校正後才能把 confidence 升為 high
+
+## [2026-07-12] update | 第二輪 stub 建置
+- 新增頁面：
+  - `entities/TWSE-1301台塑.md`、`TWSE-1303南亞.md`、`TWSE-1326台化.md`
+  - `concepts/CCL.md`、`concepts/半導體.md`
+  - `concepts/2026-07-16-tsmc-earnings-call.md`
+- 更新 `index.md` (共 18 頁 → 後 23 個檔案總計)
+- 完整檔案結構見下方
+
+## [2026-07-12] final state | 整理結束
+- 23 .md/.txt 檔
+- 19 wiki content pages
+- 6 個 wikilinks 未指向實際頁面（4 個為順帶提及的個股需要未來 stub、2 個為歡迎頁的範例文字）
+- 每頁 ≥2 outbound, ≥3 inbound
+- 0 orphan content page
