@@ -45,9 +45,14 @@
 - 更新 `index.md` (共 18 頁 → 後 23 個檔案總計)
 - 完整檔案結構見下方
 
-## [2026-07-12] final state | 整理結束
-- 23 .md/.txt 檔
-- 19 wiki content pages
-- 6 個 wikilinks 未指向實際頁面（4 個為順帶提及的個股需要未來 stub、2 個為歡迎頁的範例文字）
-- 每頁 ≥2 outbound, ≥3 inbound
-- 0 orphan content page
+## [2026-07-13] ingest | 2026-07-08 理財達人秀回補
+- 來源: YouTube video Or-gZxDhTS0
+- 下載 mp3 (57 MB, 48:50)
+- faster-whisper tiny 跑 1998 段 (133s wall clock)
+- raw transcript 寫入 vault: `raw/transcripts/Or-gZxDhTS0-fw.txt`
+- 建立 show page: `shows/2026-07-08-lsm-e34.md`
+- 建立 entity stub:
+  - `entities/KRX-005930三星電子.md`
+  - `entities/KRX-000660SK-Hynix.md`
+- 更新 `index.md` (21 頁)
+- 信心 medium：tiny 模型字詞誤讀常見（如 兆華→造華、三星→三倍、南亞→眼欄）
