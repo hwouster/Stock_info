@@ -56,3 +56,16 @@
   - `entities/KRX-000660SK-Hynix.md`
 - 更新 `index.md` (21 頁)
 - 信心 medium：tiny 模型字詞誤讀常見（如 兆華→造華、三星→三倍、南亞→眼欄）
+
+## [2026-07-13] ingest | 2026-07-07 雙集回補
+- 來源 1: YouTube kMQpMKFxXkM (理財達人秀 完整版)
+- 來源 2: YouTube V_jJvPjytSg (兆華艾綸說 網路獨播版)
+- 下載 mp3 兩支共 116 MB
+- faster-whisper tiny 跑約 4.5 分鐘 (1798 + 2001 段)
+- raw 寫入: `raw/transcripts/kMQpMKFxXkM-fw.txt` + `V_jJvPjytSg-fw.txt`
+- show pages: 
+  - `shows/2026-07-07-lsm-e33.md`
+  - `shows/2026-07-07-ealun-lsm.md`
+- 兩集主題相近：開高殺低、AI 利空報告連發、被動+CCL+矽晶圓重殺
+- 重點待驗證項目：whisper 讀的「CME in the Lies」是哪家分析機構 (Citigroup / Morgan Stanley / 其他)
+- 更新 `index.md` (23 頁)
